@@ -3,7 +3,9 @@ Title: Instrumented Difference-in-Differences Decomposition
 Version: 0.1.0
 Authors@R: 
     person("Sho", "Miyaji", email = "sho.miyaji@yale.edu", role = c("aut", "cre"))
-Description: Implements a decomposition of the two-way fixed effects instrumental variable estimator into all possible Wald DID estimators. Provides functions to summarize the contribution of different cohort comparisons to the overall TWFEIV estimate, with or without controls.
+Description: Implements a decomposition of the two-way fixed effects instrumental variable estimator into all possible Wald difference-in-differences estimators. 
+  Provides functions to summarize the contribution of different cohort comparisons to the overall two-way fixed effects instrumental variable estimate, with or without controls. 
+  The method is described in Miyaji (2024) <doi:10.48550/arXiv.2405.16467>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

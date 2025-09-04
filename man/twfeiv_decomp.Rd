@@ -4,7 +4,7 @@
 \alias{twfeiv_decomp}
 \title{DID-IV decomposition}
 \usage{
-twfeiv_decomp(formula, data, id_var, time_var, summary_output = F)
+twfeiv_decomp(formula, data, id_var, time_var, summary_output = FALSE)
 }
 \arguments{
 \item{formula}{A formula object of the form \code{Y ~ D + controls | controls + Z}, where:

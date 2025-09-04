@@ -54,7 +54,7 @@ twfeiv_decomp <- function(formula,
                           data,
                           id_var,
                           time_var,
-                          summary_output = F){
+                          summary_output = FALSE){
 # Extract variable names from formula
 var_names <- extract_variable_names(formula)
 outcome_var <- var_names$outcome_var
@@ -147,7 +147,7 @@ exposed_unexposed_combinations <- exposed_unexposed_combinations %>%
   select(-weight_numerator, -weight_denominator)
 
 # Print summary
-if (summary_output == T){
+if (summary_output == TRUE){
   print_summary(data = exposed_unexposed_combinations, return_df = TRUE)
 }
 
@@ -208,7 +208,7 @@ return(exposed_unexposed_combinations)
   exposed_unexposed_combinations$weight_kl <- exposed_unexposed_combinations$weight_kl / total_weight
 
   # Print summary
-  if (summary_output == T){
+  if (summary_output == TRUE){
   print_summary(data = exposed_unexposed_combinations, return_df = TRUE)
   }
 
